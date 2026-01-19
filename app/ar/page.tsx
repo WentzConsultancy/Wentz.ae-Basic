@@ -98,23 +98,6 @@ export default function ArabicHome() {
         </div>
       </section>
 
-      <section className="pb-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl overflow-hidden border border-slate-700 bg-slate-900/60 shadow-2xl">
-            <video
-              className="w-full"
-              controls
-              muted
-              playsInline
-              preload="metadata"
-              poster="/synapsis-logo.png"
-            >
-              <source src="/synapsis-heritage.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </main>
   );
