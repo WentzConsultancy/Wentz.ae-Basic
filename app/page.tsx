@@ -1,8 +1,4 @@
-import Hero from '@/components/Hero';
-import InvestmentThesis from '@/components/InvestmentThesis';
-import ThreePhaseModel from '@/components/ThreePhaseModel';
-import DubaiOpportunity from '@/components/DubaiOpportunity';
-import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 import Navigation from '@/components/Navigation';
 import { contentEn } from '@/content/siteContent';
 
@@ -15,13 +11,44 @@ export default function Home() {
       <Navigation
         labels={contentEn.nav}
         isRtl={contentEn.dir === 'rtl'}
-        aboutHref="/about-us"
+        links={{
+          home: '/',
+          advisory: '/from-advisory-to-automation-ip',
+          model: '/3-phase-model',
+          market: '/market-opportunity',
+          contact: '/contact',
+        }}
       />
-      <Hero content={contentEn.hero} isRtl={contentEn.dir === 'rtl'} />
-      <InvestmentThesis content={contentEn.investmentThesis} />
-      <ThreePhaseModel content={contentEn.threePhase} />
-      <DubaiOpportunity content={contentEn.dubai} />
-      <Contact content={contentEn.contact} />
+
+      <section className="pt-28 pb-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            Wentz Consultancy
+          </h1>
+          <p className="text-xl text-gray-300">
+            Cybersecurity automation and principal-led risk advisory.
+          </p>
+        </div>
+      </section>
+
+      <section className="pb-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl overflow-hidden border border-slate-700 bg-slate-900/60 shadow-2xl">
+            <video
+              className="w-full"
+              controls
+              muted
+              playsInline
+              preload="metadata"
+              poster="/synapsis-logo.png"
+            >
+              <source src="/synapsis-heritage.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <Footer poweredBy={contentEn.hero.poweredBy} />
     </main>
   );
 }

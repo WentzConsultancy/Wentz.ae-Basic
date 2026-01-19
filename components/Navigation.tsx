@@ -7,33 +7,24 @@ import type { SiteContent } from '@/content/siteContent';
 type NavigationProps = {
   labels: SiteContent['nav'];
   isRtl?: boolean;
-  aboutHref?: string;
+  links: {
+    home: string;
+    advisory: string;
+    model: string;
+    market: string;
+    contact: string;
+  };
 };
 
-export default function Navigation({ labels, isRtl, aboutHref }: NavigationProps) {
+export default function Navigation({ labels, isRtl, links }: NavigationProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      setIsMobileMenuOpen(false);
-    }
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    setIsMobileMenuOpen(false);
-  };
 
   const mobileAlignClass = isRtl ? 'text-right' : 'text-left';
 
@@ -47,8 +38,8 @@ export default function Navigation({ labels, isRtl, aboutHref }: NavigationProps
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <button
-            onClick={scrollToTop}
+          <a
+            href={links.home}
             className="flex items-center gap-3 text-blue-400 hover:text-blue-300 transition-colors"
             aria-label="Home"
           >
@@ -63,45 +54,33 @@ export default function Navigation({ labels, isRtl, aboutHref }: NavigationProps
               />
             </div>
             <span className="text-lg font-semibold hidden sm:inline">Wentz</span>
-          </button>
+          </a>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <button
-                onClick={() => scrollToSection('thesis')}
+              <a
+                href={links.advisory}
                 className="text-gray-300 hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors"
               >
                 {labels.investmentThesis}
-              </button>
-              <a
-                href={aboutHref ?? '/about-us'}
-                className="text-gray-300 hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors"
-              >
-                {labels.about}
               </a>
-              <button
-                onClick={() => scrollToSection('model')}
+              <a
+                href={links.model}
                 className="text-gray-300 hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors"
               >
                 {labels.threePhase}
-              </button>
-              <button
-                onClick={() => scrollToSection('team')}
-                className="text-gray-300 hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors"
-              >
-                {labels.team}
-              </button>
-              <button
-                onClick={() => scrollToSection('dubai')}
+              </a>
+              <a
+                href={links.market}
                 className="text-gray-300 hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors"
               >
                 {labels.dubai}
-              </button>
-              <button
-                onClick={() => scrollToSection('contact')}
+              </a>
+              <a
+                href={links.contact}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 {labels.contact}
-              </button>
+              </a>
               <div className="flex items-center gap-2">
                 <a
                   href="/"
@@ -152,42 +131,30 @@ export default function Navigation({ labels, isRtl, aboutHref }: NavigationProps
       {isMobileMenuOpen && (
         <div className="md:hidden bg-slate-900/98 border-t border-slate-800">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <button
-              onClick={() => scrollToSection('thesis')}
+            <a
+              href={links.advisory}
               className={`block w-full ${mobileAlignClass} text-gray-300 hover:text-blue-400 px-3 py-2 text-base font-medium`}
             >
               {labels.investmentThesis}
-            </button>
-            <a
-              href={aboutHref ?? '/about-us'}
-              className={`block w-full ${mobileAlignClass} text-gray-300 hover:text-blue-400 px-3 py-2 text-base font-medium`}
-            >
-              {labels.about}
             </a>
-            <button
-              onClick={() => scrollToSection('model')}
+            <a
+              href={links.model}
               className={`block w-full ${mobileAlignClass} text-gray-300 hover:text-blue-400 px-3 py-2 text-base font-medium`}
             >
               {labels.threePhase}
-            </button>
-            <button
-              onClick={() => scrollToSection('team')}
-              className={`block w-full ${mobileAlignClass} text-gray-300 hover:text-blue-400 px-3 py-2 text-base font-medium`}
-            >
-              {labels.team}
-            </button>
-            <button
-              onClick={() => scrollToSection('dubai')}
+            </a>
+            <a
+              href={links.market}
               className={`block w-full ${mobileAlignClass} text-gray-300 hover:text-blue-400 px-3 py-2 text-base font-medium`}
             >
               {labels.dubai}
-            </button>
-            <button
-              onClick={() => scrollToSection('contact')}
+            </a>
+            <a
+              href={links.contact}
               className={`block w-full ${mobileAlignClass} bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-md text-base font-medium`}
             >
               {labels.contact}
-            </button>
+            </a>
             <div className="flex items-center gap-3 px-3 py-2">
               <a
                 href="/"
