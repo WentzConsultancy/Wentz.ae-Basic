@@ -35,66 +35,55 @@ export default function ArabicHome() {
         </div>
       </section>
 
-      <section className="pb-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-900/70 border border-slate-700 rounded-2xl p-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              تنفيذ مُثبت في بيئات منظمة وبنى تحتية حرجة
-            </h2>
-            <p className="text-gray-300 text-lg leading-relaxed">
-              تقدم Wentz Consultancy استشارات وأتمتة أمن سيبراني بقيادة الخبراء
-              للمؤسسات التي تؤثر فيها الإتاحة والنزاهة وزمن الاستجابة على النظام بأكمله.
-            </p>
-            <p className="text-gray-300 text-lg leading-relaxed mt-4">
-              تمتد الخبرة عبر الأسواق المالية وبنية المدفوعات والاتصالات الوطنية
-              والمرافق الحيوية — تحت ضغط تنظيمي وتخاطري مباشر.
-            </p>
-          </div>
+      <section className="pb-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            تنفيذ مُثبت في بيئات منظمة وبنى تحتية حرجة
+          </h2>
+          <p className="text-gray-300 text-base leading-relaxed">
+            تقدم Wentz Consultancy استشارات وأتمتة أمن سيبراني بقيادة الخبراء
+            للمؤسسات التي تؤثر فيها الإتاحة والنزاهة وزمن الاستجابة على النظام بأكمله.
+          </p>
+          <p className="text-gray-300 text-base leading-relaxed mt-4">
+            تمتد الخبرة عبر الأسواق المالية وبنية المدفوعات والاتصالات الوطنية
+            والمرافق الحيوية — تحت ضغط تنظيمي وتخاطري مباشر.
+          </p>
         </div>
       </section>
 
-      <section className="pb-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-900/70 border border-slate-700 rounded-2xl p-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
-              مشاركات مختارة في البنى التحتية والتنظيمية
-            </h2>
-            <div className="space-y-5 text-gray-300 text-lg">
-              <div>
-                <p className="font-semibold text-white">Deribit (Coinbase Group)</p>
-                <p>
-                  منصة مشتقات عالمية — استجابة لحوادث تهديدات دولية، تحويل SOC،
-                  جاهزية VARA وSOC 2 وSOX.
-                </p>
-              </div>
-              <div>
-                <p className="font-semibold text-white">CCV / Fiserv</p>
-                <p>
-                  عمود فقري للمعاملات المالية الأوروبية وبنية محطات الدفع التي
-                  تدعم توفر البنوك والتجزئة.
-                </p>
-              </div>
-              <div>
-                <p className="font-semibold text-white">ABN AMRO</p>
-                <p>
-                  مصرف من الفئة الأولى — أتمتة SOC وهندسة الكشف ضمن بيئة منظمة.
-                </p>
-              </div>
-              <div>
-                <p className="font-semibold text-white">KPN</p>
-                <p>
-                  بنية اتصالات وطنية — أتمتة SOC مدفوعة بـ SOAR مع خفض قابل للقياس
-                  في عبء العمل.
-                </p>
-              </div>
-              <div>
-                <p className="font-semibold text-white">Brabant Water</p>
-                <p>
-                  مرفق حيوي — قيادة SOC وحوكمة صيد التهديدات لبنية المياه الإقليمية.
-                </p>
-              </div>
-            </div>
-          </div>
+      <section className="py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            نتائج قابلة للقياس
+          </h2>
+          <ul className="list-disc list-inside space-y-2 text-gray-300 text-base">
+            <li>خفض عبء العمل في SOC بما يعادل أكثر من 13 موظفاً عبر الأتمتة</li>
+            <li>قيادة تنفيذية للحوادث تحت نشاط تهديدات دولية</li>
+            <li>جاهزية VARA وSOC 2 وSOX في بيئات تشغيلية حيّة</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            مجالات التركيز الأساسية
+          </h2>
+          <ul className="list-disc list-inside space-y-2 text-gray-300 text-base">
+            <li>تحويل SOC وإعادة تصميم نموذج التشغيل</li>
+            <li>قيادة الحوادث ودعم قرارات الإدارة التنفيذية</li>
+            <li>هندسة الكشف وأتمتة SOC</li>
+            <li>جاهزية الامتثال والمراجعات (VARA وSOC 2 وSOX)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="pt-12 pb-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gray-300 text-base">
+            تقديم استشارات وأتمتة أمن سيبراني بقيادة الخبراء عبر المؤسسات المنظمة
+            في الإمارات والخليج وEMEA.
+          </p>
         </div>
       </section>
 
