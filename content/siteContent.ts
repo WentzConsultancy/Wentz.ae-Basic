@@ -21,7 +21,9 @@ export type SiteContent = {
   };
   investmentThesis: {
     title: string;
-    items: Array<{ title: string; body: string }>;
+    intro: string;
+    steps: string[];
+    outro: string;
   };
   about: {
     title: string;
@@ -114,33 +116,21 @@ export const contentEn: SiteContent = {
       'Building the future of cybersecurity automation through proven expertise and innovative technology solutions',
     ctaPrimary: 'Get Started',
     ctaSecondary: 'Learn More',
-    poweredBy: 'Powered by the Synapsis IT Legacy',
+    poweredBy:
+      'Delivery backed by Synapsis IT (EU) — leveraging a proven engineering and automation foundation across regulated environments.',
     heritageLabel: 'Heritage Video',
   },
   investmentThesis: {
     title: 'From Advisory to Automation IP',
-    items: [
-      {
-        title: 'Market Opportunity',
-        body:
-          'The cybersecurity automation market is experiencing explosive growth, driven by increasing threat complexity and resource constraints. Organizations are seeking scalable solutions that combine expert knowledge with automated delivery.',
-      },
-      {
-        title: 'Unique Value Proposition',
-        body:
-          'We bridge the gap between principal-level risk expertise and scalable automation revenue. Our model transforms advisory knowledge into repeatable, high-margin automation products and services.',
-      },
-      {
-        title: 'Proven Expertise',
-        body:
-          'Our team brings decades of combined experience in cybersecurity risk management, with deep expertise in designing and implementing automation solutions for enterprise clients across multiple industries.',
-      },
-      {
-        title: 'Scalable Model',
-        body:
-          'Our three-phase approach ensures sustainable growth: from advisory services to productized automation, creating a clear path from expertise to scalable revenue streams with proven operational frameworks.',
-      },
+    intro:
+      'Wentz Consultancy operates a structured progression from advisory to execution:',
+    steps: [
+      'Principal-led incident command and risk advisory',
+      'SOC transformation and automation design',
+      'Repeatable automation IP embedded into client environments',
     ],
+    outro:
+      'This model ensures advisory insight translates directly into operational outcomes, not reports.',
   },
   about: {
     title: 'About Us',
@@ -334,33 +324,20 @@ export const contentAr: SiteContent = {
       'نبني مستقبل أتمتة الأمن السيبراني عبر خبرة مثبتة وحلول تقنية مبتكرة',
     ctaPrimary: 'ابدأ الآن',
     ctaSecondary: 'اعرف المزيد',
-    poweredBy: 'مدعوم بإرث Synapsis IT',
+    poweredBy:
+      'التسليم مدعوم من Synapsis IT (EU) — بالاعتماد على أساس هندسي وأتمتة مثبت في بيئات منظمة.',
     heritageLabel: 'فيديو الإرث',
   },
   investmentThesis: {
     title: 'من الاستشارات إلى ملكية الأتمتة',
-    items: [
-      {
-        title: 'فرصة السوق',
-        body:
-          'يشهد سوق أتمتة الأمن السيبراني نمواً متسارعاً مدفوعاً بتعقيد التهديدات ونقص الموارد. تبحث المؤسسات عن حلول قابلة للتوسع تجمع بين الخبرة والقدرات الآلية.',
-      },
-      {
-        title: 'قيمة فريدة',
-        body:
-          'نربط بين الخبرة العميقة في إدارة المخاطر والعوائد القابلة للتوسع من الأتمتة. يحول نموذجنا المعرفة الاستشارية إلى منتجات وخدمات أتمتة عالية الهامش.',
-      },
-      {
-        title: 'خبرة مثبتة',
-        body:
-          'يجمع فريقنا عقوداً من الخبرة في إدارة مخاطر الأمن السيبراني وتصميم حلول الأتمتة لعملاء المؤسسات عبر قطاعات متعددة.',
-      },
-      {
-        title: 'نموذج قابل للتوسع',
-        body:
-          'يضمن نهجنا ثلاثي المراحل نمواً مستداماً من الخدمات الاستشارية إلى الأتمتة المُنتَجة، مع مسار واضح من الخبرة إلى الإيرادات القابلة للتوسع.',
-      },
+    intro: 'تعمل Wentz Consultancy وفق انتقال منهجي من الاستشارة إلى التنفيذ:',
+    steps: [
+      'قيادة الخبراء في إدارة الحوادث والاستشارات المخاطرية',
+      'تحويل SOC وتصميم الأتمتة',
+      'ملكية أتمتة قابلة للتكرار داخل بيئات العملاء',
     ],
+    outro:
+      'يضمن هذا النموذج أن تتحول الرؤى الاستشارية مباشرةً إلى نتائج تشغيلية، لا تقارير.',
   },
   about: {
     title: 'من نحن',
