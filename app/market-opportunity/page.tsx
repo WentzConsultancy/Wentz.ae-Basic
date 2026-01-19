@@ -21,7 +21,7 @@ export default function MarketOpportunityPage() {
         }}
       />
       <DubaiOpportunity content={contentEn.dubai} />
-      <Footer poweredBy={contentEn.hero.poweredBy} />
+      <Footer />
     </main>
   );
 }

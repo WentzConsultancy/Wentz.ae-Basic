@@ -21,7 +21,7 @@ export default function AdvisoryPageArabic() {
         }}
       />
       <InvestmentThesis content={contentAr.investmentThesis} />
-      <Footer poweredBy={contentAr.hero.poweredBy} />
+      <Footer />
     </main>
   );
 }

@@ -21,7 +21,7 @@ export default function ThreePhasePageArabic() {
         }}
       />
       <ThreePhaseModel content={contentAr.threePhase} />
-      <Footer poweredBy={contentAr.hero.poweredBy} />
+      <Footer />
     </main>
   );
 }

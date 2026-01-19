@@ -120,7 +120,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer poweredBy={contentEn.hero.poweredBy} />
+      <Footer />
     </main>
   );
 }

@@ -21,7 +21,7 @@ export default function ContactPageArabic() {
         }}
       />
       <Contact content={contentAr.contact} />
-      <Footer poweredBy={contentAr.hero.poweredBy} />
+      <Footer />
     </main>
   );
 }

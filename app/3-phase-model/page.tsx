@@ -21,7 +21,7 @@ export default function ThreePhasePage() {
         }}
       />
       <ThreePhaseModel content={contentEn.threePhase} />
-      <Footer poweredBy={contentEn.hero.poweredBy} />
+      <Footer />
     </main>
   );
 }

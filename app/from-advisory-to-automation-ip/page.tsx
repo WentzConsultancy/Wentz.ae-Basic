@@ -21,7 +21,7 @@ export default function AdvisoryPage() {
         }}
       />
       <InvestmentThesis content={contentEn.investmentThesis} />
-      <Footer poweredBy={contentEn.hero.poweredBy} />
+      <Footer />
     </main>
   );
 }

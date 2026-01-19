@@ -115,7 +115,7 @@ export default function ArabicHome() {
         </div>
       </section>
 
-      <Footer poweredBy={contentAr.hero.poweredBy} />
+      <Footer />
     </main>
   );
 }

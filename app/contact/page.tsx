@@ -21,7 +21,7 @@ export default function ContactPage() {
         }}
       />
       <Contact content={contentEn.contact} />
-      <Footer poweredBy={contentEn.hero.poweredBy} />
+      <Footer />
     </main>
   );
 }
