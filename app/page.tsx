@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Footer from '@/components/Footer';
 import Navigation from '@/components/Navigation';
 import { contentEn } from '@/content/siteContent';
@@ -58,59 +57,17 @@ export default function Home() {
       </section>
 
       <section className="pb-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
-            Selected Infrastructure &amp; Regulated Engagements
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                src: '/logos/deribit.svg',
-                name: 'Deribit (Coinbase Group)',
-                caption:
-                  'Global derivatives trading platform — nation-state incident response, SOC transformation, VARA, SOC 2 & SOX readiness.',
-              },
-              {
-                src: '/logos/ccv-fiserv.svg',
-                name: 'CCV / Fiserv',
-                caption:
-                  'European financial transaction backbone and payment-terminal infrastructure supporting banks and retail availability.',
-              },
-              {
-                src: '/logos/abn-amro.svg',
-                name: 'ABN AMRO',
-                caption:
-                  'Tier-1 banking — SOC automation and detection engineering in a regulated environment.',
-              },
-              {
-                src: '/logos/kpn.svg',
-                name: 'KPN',
-                caption:
-                  'National telecom infrastructure — SOAR-driven SOC automation delivering measurable workload reduction.',
-              },
-              {
-                src: '/logos/brabant-water.svg',
-                name: 'Brabant Water',
-                caption:
-                  'Critical utility — SOC leadership and threat-hunting governance for regional water infrastructure.',
-              },
-            ].map((item) => (
-              <div
-                key={item.name}
-                className="bg-slate-900/60 border border-slate-700 rounded-xl p-6 text-center"
-              >
-                <div className="relative h-24 w-full mb-4">
-                  <Image
-                    src={item.src}
-                    alt={item.name}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 200px, 260px"
-                  />
-                </div>
-                <p className="text-sm text-gray-300 leading-relaxed">{item.caption}</p>
-              </div>
-            ))}
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-slate-900/70 border border-slate-700 rounded-2xl p-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+              Proven Delivery Across Regulated Domains
+            </h2>
+            <p className="text-gray-300 text-lg leading-relaxed text-center">
+              Engagements span regulated financial markets, payment infrastructure,
+              national telecom, and critical utilities. Delivery focuses on measurable
+              SOC transformation, incident command under adversarial pressure, and
+              repeatable automation outcomes.
+            </p>
           </div>
         </div>
       </section>
