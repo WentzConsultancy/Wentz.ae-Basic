@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import type { SiteContent } from '@/content/siteContent';
 
@@ -40,20 +39,10 @@ export default function Navigation({ labels, isRtl, links }: NavigationProps) {
         <div className="flex items-center justify-between h-16">
           <a
             href={links.home}
-            className="flex items-center gap-3 text-blue-400 hover:text-blue-300 transition-colors"
+            className="text-base sm:text-lg font-semibold text-blue-400 hover:text-blue-300 transition-colors"
             aria-label="Home"
           >
-            <div className="relative h-10 w-10">
-              <Image
-                src="/wentz-logo.png"
-                alt="Wentz"
-                fill
-                className="object-contain"
-                sizes="40px"
-                priority
-              />
-            </div>
-            <span className="text-lg font-semibold hidden sm:inline">Wentz</span>
+            Wentz Consultancy
           </a>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">

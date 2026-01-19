@@ -54,16 +54,46 @@ export default function ArabicHome() {
       </section>
 
       <section className="pb-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-slate-900/70 border border-slate-700 rounded-2xl p-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-              تنفيذ مُثبت عبر قطاعات منظمة
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
+              مشاركات مختارة في البنى التحتية والتنظيمية
             </h2>
-            <p className="text-gray-300 text-lg leading-relaxed text-center">
-              تشمل الخبرات الأسواق المالية المنظمة وبنية المدفوعات والاتصالات الوطنية
-              والمرافق الحيوية. التركيز على تحويل SOC بنتائج قابلة للقياس، وقيادة
-              الحوادث تحت ضغط تخاصمي، وأتمتة قابلة للتكرار.
-            </p>
+            <div className="space-y-5 text-gray-300 text-lg">
+              <div>
+                <p className="font-semibold text-white">Deribit (Coinbase Group)</p>
+                <p>
+                  منصة مشتقات عالمية — استجابة لحوادث تهديدات دولية، تحويل SOC،
+                  جاهزية VARA وSOC 2 وSOX.
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold text-white">CCV / Fiserv</p>
+                <p>
+                  عمود فقري للمعاملات المالية الأوروبية وبنية محطات الدفع التي
+                  تدعم توفر البنوك والتجزئة.
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold text-white">ABN AMRO</p>
+                <p>
+                  مصرف من الفئة الأولى — أتمتة SOC وهندسة الكشف ضمن بيئة منظمة.
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold text-white">KPN</p>
+                <p>
+                  بنية اتصالات وطنية — أتمتة SOC مدفوعة بـ SOAR مع خفض قابل للقياس
+                  في عبء العمل.
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold text-white">Brabant Water</p>
+                <p>
+                  مرفق حيوي — قيادة SOC وحوكمة صيد التهديدات لبنية المياه الإقليمية.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

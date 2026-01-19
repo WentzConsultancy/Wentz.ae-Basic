@@ -57,17 +57,48 @@ export default function Home() {
       </section>
 
       <section className="pb-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-slate-900/70 border border-slate-700 rounded-2xl p-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-              Proven Delivery Across Regulated Domains
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
+              Selected Infrastructure &amp; Regulated Engagements
             </h2>
-            <p className="text-gray-300 text-lg leading-relaxed text-center">
-              Engagements span regulated financial markets, payment infrastructure,
-              national telecom, and critical utilities. Delivery focuses on measurable
-              SOC transformation, incident command under adversarial pressure, and
-              repeatable automation outcomes.
-            </p>
+            <div className="space-y-5 text-gray-300 text-lg">
+              <div>
+                <p className="font-semibold text-white">Deribit (Coinbase Group)</p>
+                <p>
+                  Global derivatives trading platform — nation-state incident response,
+                  SOC transformation, VARA, SOC 2 &amp; SOX readiness.
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold text-white">CCV / Fiserv</p>
+                <p>
+                  European financial transaction backbone and payment-terminal
+                  infrastructure supporting banks and retail availability.
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold text-white">ABN AMRO</p>
+                <p>
+                  Tier-1 banking — SOC automation and detection engineering in a
+                  regulated environment.
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold text-white">KPN</p>
+                <p>
+                  National telecom infrastructure — SOAR-driven SOC automation delivering
+                  measurable workload reduction.
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold text-white">Brabant Water</p>
+                <p>
+                  Critical utility — SOC leadership and threat-hunting governance for
+                  regional water infrastructure.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
