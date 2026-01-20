@@ -21,7 +21,7 @@ export default function ThreePhasePage() {
         }}
       />
       <ThreePhaseModel content={contentEn.threePhase} />
-      <Footer />
+      <Footer line1={contentEn.footer.line1} line2={contentEn.footer.line2} />
     </main>
   );
 }

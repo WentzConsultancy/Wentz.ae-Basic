@@ -19,6 +19,10 @@ export type SiteContent = {
     poweredBy: string;
     heritageLabel: string;
   };
+  footer: {
+    line1: string;
+    line2: string;
+  };
   investmentThesis: {
     title: string;
     intro: string;
@@ -119,6 +123,10 @@ export const contentEn: SiteContent = {
     poweredBy:
       'Delivery backed by Synapsis IT (EU) — leveraging a proven engineering and automation foundation across regulated environments.',
     heritageLabel: 'Heritage Video',
+  },
+  footer: {
+    line1: 'Delivery backed by Synapsis IT (EU)',
+    line2: 'Engineering and automation support across regulated environments',
   },
   investmentThesis: {
     title: 'From Advisory to Automation IP',
@@ -327,6 +335,10 @@ export const contentAr: SiteContent = {
     poweredBy:
       'التسليم مدعوم من Synapsis IT (EU) — بالاعتماد على أساس هندسي وأتمتة مثبت في بيئات منظمة.',
     heritageLabel: 'فيديو الإرث',
+  },
+  footer: {
+    line1: 'التسليم مدعوم من Synapsis IT (EU)',
+    line2: 'دعم هندسي وأتمتة عبر بيئات منظمة',
   },
   investmentThesis: {
     title: 'من الاستشارات إلى ملكية الأتمتة',

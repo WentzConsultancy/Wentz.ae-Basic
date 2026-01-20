@@ -21,7 +21,7 @@ export default function ThreePhasePageArabic() {
         }}
       />
       <ThreePhaseModel content={contentAr.threePhase} />
-      <Footer />
+      <Footer line1={contentAr.footer.line1} line2={contentAr.footer.line2} />
     </main>
   );
 }

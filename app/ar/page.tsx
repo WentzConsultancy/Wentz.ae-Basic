@@ -87,7 +87,7 @@ export default function ArabicHome() {
         </div>
       </section>
 
-      <Footer />
+      <Footer line1={contentAr.footer.line1} line2={contentAr.footer.line2} />
     </main>
   );
 }

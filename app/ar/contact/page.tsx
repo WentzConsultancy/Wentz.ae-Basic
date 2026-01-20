@@ -21,7 +21,7 @@ export default function ContactPageArabic() {
         }}
       />
       <Contact content={contentAr.contact} />
-      <Footer />
+      <Footer line1={contentAr.footer.line1} line2={contentAr.footer.line2} />
     </main>
   );
 }
