@@ -276,7 +276,7 @@ export const contentEn: SiteContent = {
     points: [
       'Gateway to $2T+ EMEA and APAC markets',
       '24-hour connectivity across time zones',
-      'Zero corporate and personal income tax',
+      'Low corporate and zero personal income tax',
       'World-class infrastructure and logistics',
       'Growing cybersecurity regulatory framework',
       'Access to diverse talent pool',
@@ -483,7 +483,7 @@ export const contentAr: SiteContent = {
     points: [
       'بوابة إلى أسواق EMEA وAPAC التي تتجاوز 2 تريليون دولار',
       'اتصال 24 ساعة عبر المناطق الزمنية',
-      'صفر ضرائب على الشركات والدخل الشخصي',
+      'ضرائب شركات منخفضة وصفر ضريبة على الدخل الشخصي',
       'بنية تحتية ولوجستيات عالمية',
       'إطار تنظيمي متنامٍ للأمن السيبراني',
       'الوصول إلى مواهب متنوعة',
