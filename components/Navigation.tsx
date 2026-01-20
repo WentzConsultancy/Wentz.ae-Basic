@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import type { SiteContent } from '@/content/siteContent';
 
@@ -73,21 +74,31 @@ export default function Navigation({ labels, isRtl, links }: NavigationProps) {
               <div className="flex items-center gap-2">
                 <a
                   href="/"
-                  className={`flex items-center justify-center h-9 w-9 rounded-full border border-slate-700 text-lg ${
-                    !isRtl ? 'bg-blue-600 text-white' : 'text-gray-300'
+                  className={`flex items-center justify-center h-9 w-9 rounded-full border border-slate-700 ${
+                    !isRtl ? 'bg-blue-600/20' : ''
                   }`}
                   aria-label={labels.languageEnglish}
                 >
-                  🇬🇧
+                  <Image
+                    src="/flags/uk.svg"
+                    alt="English"
+                    width={18}
+                    height={12}
+                  />
                 </a>
                 <a
                   href="/ar"
-                  className={`flex items-center justify-center h-9 w-9 rounded-full border border-slate-700 text-lg ${
-                    isRtl ? 'bg-blue-600 text-white' : 'text-gray-300'
+                  className={`flex items-center justify-center h-9 w-9 rounded-full border border-slate-700 ${
+                    isRtl ? 'bg-blue-600/20' : ''
                   }`}
                   aria-label={labels.languageArabic}
                 >
-                  🇦🇪
+                  <Image
+                    src="/flags/uae.svg"
+                    alt="Arabic"
+                    width={18}
+                    height={12}
+                  />
                 </a>
               </div>
             </div>
@@ -147,21 +158,31 @@ export default function Navigation({ labels, isRtl, links }: NavigationProps) {
             <div className="flex items-center gap-3 px-3 py-2">
               <a
                 href="/"
-                className={`flex items-center justify-center h-9 w-9 rounded-full border border-slate-700 text-lg ${
-                  !isRtl ? 'bg-blue-600 text-white' : 'text-gray-300'
+                className={`flex items-center justify-center h-9 w-9 rounded-full border border-slate-700 ${
+                  !isRtl ? 'bg-blue-600/20' : ''
                 }`}
                 aria-label={labels.languageEnglish}
               >
-                🇬🇧
+                <Image
+                  src="/flags/uk.svg"
+                  alt="English"
+                  width={18}
+                  height={12}
+                />
               </a>
               <a
                 href="/ar"
-                className={`flex items-center justify-center h-9 w-9 rounded-full border border-slate-700 text-lg ${
-                  isRtl ? 'bg-blue-600 text-white' : 'text-gray-300'
+                className={`flex items-center justify-center h-9 w-9 rounded-full border border-slate-700 ${
+                  isRtl ? 'bg-blue-600/20' : ''
                 }`}
                 aria-label={labels.languageArabic}
               >
-                🇦🇪
+                <Image
+                  src="/flags/uae.svg"
+                  alt="Arabic"
+                  width={18}
+                  height={12}
+                />
               </a>
             </div>
           </div>
